@@ -25,7 +25,7 @@
     }
 
     body {
-      font-size: 1.5em; /* currently ems cause chrome bug misinterpreting rems on body element */
+      font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
       line-height: 1.6;
       font-weight: 400;
       margin: 0;
@@ -45,7 +45,7 @@
       margin-bottom: 2rem;
       font-size: 2.8rem;
       line-height: 1.35; 
-	  font-family: Strada-regular;
+	  font-family: Strada-regular, sans-serif;
     }
 
     h4.title {
@@ -63,44 +63,62 @@
     }
 
     .column {
-      width: 80rem; /* Set your column width here */
+      width: 26rem; /* Set your column width here */
       margin: auto;
     }
 
     /* Larger than mobile */
     @media (min-width: 400px) {
-		.column{
-			width: 33rem; /* Set your column width here */
-			margin: auto;
-		}
     }
 
     /* Larger than phablet (also point when grid becomes active) */
     @media (min-width: 550px) {
-		.column{
-			width: 42rem; /* Set your column width here */
+		.column {
+			width: 32rem; /* Set your column width here */
 			margin: auto;
-		}	
+		}
     }
 
     /* Larger than tablet */
     @media (min-width: 750px) {
-		.column{
-			width: 53rem; /* Set your column width here */
+		.column {
+			width: 50rem; /* Set your column width here */
 			margin: auto;
+		}
+	    body, h4.author {
+	      font-size: 1.8rem;
+		}
+	    h4 {
+	      font-size: 4.2rem;
 		}
     }
 
     /* Larger than desktop */
     @media (min-width: 1000px) {
-		.column{
-			width: 65rem; /* Set your column width here */
+		.column {
+			width: 75rem; /* Set your column width here */
 			margin: auto;
+		}
+	    body, h4.author {
+	      font-size: 2.1rem;
+		}
+	    h4 {
+	      font-size: 3.6rem;
 		}
     }
 
     /* Larger than Desktop HD */
     @media (min-width: 1200px) {
+		.column{
+			width: 95rem; /* Set your column width here */
+			margin: auto;
+		}
+	    body, h4.author {
+	      font-size: 2.6rem;
+		}
+	    h4 {
+	      font-size: 4.5rem;
+		}
     }
     
   </style>
